@@ -3,42 +3,42 @@ server:
   port: 50003
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.51.118:3306/looktm
-    username: looktm-test
-    password: looktm-test
+    type: 'com.alibaba.druid.pool.DruidDataSource'
+    driver-class-name: 'com.mysql.jdbc.Driver'
+    url: 'jdbc:mysql://192.168.51.118:3306/looktm'
+    username: 'looktm-test'
+    password: 'looktm-test'
     initialSize: 5
     minIdle: 5
     maxActive: 20
     maxWait: 60000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
-    validationQuery: SELECT 1 FROM DUAL
+    validationQuery: 'SELECT 1 FROM DUAL'
     testWhileIdle: true
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
-    filters: stat,wall,log4j
-    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    filters: 'stat,wall,log4j'
+    connectionProperties: 'druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000'
     useGlobalDataSourceStat: true
   druid:
-    loginUsername: admin
-    loginPassword: admin
+    loginUsername: 'admin'
+    loginPassword: 'admin'
   thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
+    prefix: 'classpath:/templates/'
+    suffix: '.html'
     cache: false
-    mode: HTML5
+    mode: 'HTML5'
     encoding: UTF-8
-    content-type: text/html
+    content-type: 'text/html'
     check-template-location: true
   rabbitmq:
     host: localhost
     port: 5672
-    username: guest
-    password: guest
+    username: 'guest'
+    password: 'guest'
     publisher-confirms: true
     virtual-host: /
 #sping:
