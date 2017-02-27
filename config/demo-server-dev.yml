@@ -23,6 +23,9 @@ spring:
     filters: stat,wall,log4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     useGlobalDataSourceStat: true
+  druid:
+    loginUsername: admin
+    loginPassword: admin
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
@@ -38,7 +41,7 @@ spring:
     password: guest
     publisher-confirms: true
     virtual-host: /
-sping:
-  druid:
-    loginUsername: admin
-    loginPassword: admin
+#sping:
+#  druid:
+#    loginUsername: admin
+#    loginPassword: admin
