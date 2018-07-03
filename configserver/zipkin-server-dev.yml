@@ -1,0 +1,17 @@
+server:
+  port: 60000
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+  sleuth:
+    sampler:
+      percentage: 100
+
+endpoints:
+  health:
+    sensitive: false
+
+management:
+  security:
+    enabled: false
