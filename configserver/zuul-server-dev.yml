@@ -3,8 +3,8 @@ server:
 # routes to serviceId
 zuul:
   routes:
-    api-a:
-      path: /api/**
+    feign:
+      path: /feign/**
       serviceId: feign-server
 #hystrix.command.file-service.execution.isolation.thread.timeoutInMilliseconds=10000000
 hystrix:
